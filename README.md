@@ -42,6 +42,6 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
     2. [Your Own Loop](https://eloquentjavascript.net/05_higher_order.html#i_gKQ1S54F4o "Jump to Problem of 'Your Own Loop' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/your_own_loop.js))
 
-    3. [Everything](https://eloquentjavascript.net/05_higher_order.html#i_SmbRSAd5GA "Jump to Problem of 'A List") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/everything.js)) (**Recommended**)
+    3. [Everything](https://eloquentjavascript.net/05_higher_order.html#i_SmbRSAd5GA "Jump to Problem of 'Everything' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/everything.js)) (**Recommended**)
 
 
