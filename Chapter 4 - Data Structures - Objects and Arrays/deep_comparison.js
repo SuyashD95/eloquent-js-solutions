@@ -1,5 +1,5 @@
 /*
-4 - Deep Comparison (31/12/2019)
+4 - Deep Comparison (1/1/2020)
 
 The == operator compares objects by identity. But sometimes you’d prefer to compare the values of their actual properties.
 
