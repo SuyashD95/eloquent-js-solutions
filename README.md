@@ -36,3 +36,12 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
     4. [Deep Comparison](https://eloquentjavascript.net/04_data.html#i_IJBU+aXOIC "Jump to Problem of 'Deep Comparison' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%204%20-%20Data%20Structures%20-%20Objects%20and%20Arrays/deep_comparison.js)) (**Recommended**)
 
+5. [Higher-Order Functions](https://eloquentjavascript.net/05_higher_order.html "Jump to Chapter 5 on the Official Site")
+
+    1. [Flattening](https://eloquentjavascript.net/05_higher_order.html#i_aIOczlLyX1 "Jump to Problem of 'Flattening' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/flattening.js))
+
+    2. [Your Own Loop](https://eloquentjavascript.net/05_higher_order.html#i_gKQ1S54F4o "Jump to Problem of 'Your Own Loop' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/your_own_loop.js))
+
+    3. [Everything](https://eloquentjavascript.net/05_higher_order.html#i_SmbRSAd5GA "Jump to Problem of 'A List") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/everything.js)) (**Recommended**)
+
+
