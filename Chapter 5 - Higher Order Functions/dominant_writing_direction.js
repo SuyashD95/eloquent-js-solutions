@@ -90,7 +90,6 @@ console.log(dominantDirection(""));
 // → null
 
 
-
 // SCRIPTS array required for this program to run 
 
 var SCRIPTS = [

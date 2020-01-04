@@ -44,4 +44,4 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
     3. [Everything](https://eloquentjavascript.net/05_higher_order.html#i_SmbRSAd5GA "Jump to Problem of 'Everything' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/everything.js)) (**Recommended**)
 
-
+    4. [Dominant Writing Direction](https://eloquentjavascript.net/05_higher_order.html#i_4ccl4J1nOw "Jump to Problem of 'Dominant Writing Direction' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%205%20-%20Higher%20Order%20Functions/dominant_writing_direction.js)) (**Recommended**)
