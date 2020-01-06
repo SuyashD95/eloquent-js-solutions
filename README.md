@@ -48,10 +48,10 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
 6. [A Secret Life of Objects](https://eloquentjavascript.net/06_object.html "Jump to Chapter 6 on the Official Site")
 
-    1. [A Vector Type](https://eloquentjavascript.net/06_object.html#i_zO8FRQBMAy "Jump to Problem of 'A Vector Type' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/a_vector_type.js))
+    1. [A Vector Type](https://eloquentjavascript.net/06_object.html#i_zO8FRQBMAy "Jump to Problem of 'A Vector Type' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/a_vector_type.js)) (**Recommended**)
 
-    2. [Groups](https://eloquentjavascript.net/06_object.html#i_rpYp9Ou4LG "Jump to Problem of 'Groups' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/groups.js))
+    2. [Groups](https://eloquentjavascript.net/06_object.html#i_rpYp9Ou4LG "Jump to Problem of 'Groups' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/groups.js)) (**Recommended**)
 
-    3. [Iterable Groups](https://eloquentjavascript.net/06_object.html#i_djD3XDJ27V "Jump to Problem of 'Iterable Groups' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/iterable_groups.js))
+    3. [Iterable Groups](https://eloquentjavascript.net/06_object.html#i_djD3XDJ27V "Jump to Problem of 'Iterable Groups' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/iterable_groups.js)) (**Recommended**)
 
-    4. [Borrowing A Method](https://eloquentjavascript.net/06_object.html#i_wcWSnr9zHV "Jump to Problem of 'Borrowing A Method' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/borrowing_a_method.js))
+    4. [Borrowing A Method](https://eloquentjavascript.net/06_object.html#i_wcWSnr9zHV "Jump to Problem of 'Borrowing A Method' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%206%20-%20The%20Secret%20Life%20of%20Objects/borrowing_a_method.js)) (**Recommended**)
