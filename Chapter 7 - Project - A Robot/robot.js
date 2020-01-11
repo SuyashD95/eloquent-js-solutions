@@ -8,6 +8,8 @@ dropping off parcels.
 
 */
 
+// Utility Code
+
 // Create an Array containing the list of roads that exists between
 // multiple locations (places) in Meadowfield.
 const roads = [
@@ -70,6 +72,16 @@ function buildGraph(edges) {
 // Since `roadGraph` has been declared constant in the global scope, it is
 // a read-only Object that can be referenced by all the classes/functions.
 const roadGraph = buildGraph(roads);
+
+function randomPick(array) {
+    /*
+     * Return a randomly selected element from a given `array`.
+     */
+    let choice = Math.floor(Math.random() * array.length);
+    return array[choice];
+}
+
+// End of Utilitarian Code
 
 
 // VillageState Class
