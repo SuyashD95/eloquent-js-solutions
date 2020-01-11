@@ -173,6 +173,48 @@ class VillageState {
     }
 }
 
+VillageState.random = function(parcelCount = 5) {
+    /*
+     * `random` is a static method of `VillageState` which is responsible to 
+     * return a new `VillageState` object which is used as a starting point for
+     * a Robot object to start the journey of picking up & delivering all the 
+     * parcels in Meadowfield.
+     *
+     * `parcelCount` lists the total no. of parcels that needs to be picked up & delivered
+     * delivered by the Robot.
+     * 
+     * The returned instance (of `VillageState`) has two instance properties in
+     * the form of `place` & 'parcels'.
+     *
+     * The `place` property will act as the starting place, will always reference
+     * the "Post Office" of the village.
+     *
+     * And, the `parcels` property will be an array of Parcel objects (with each
+     * parcel containing properties to reference to their respective pickup place & receiving
+     * address). The robot needs to ensure all the parcel objects are delivered 
+     * i.e., the length of `parcels` Array needs to be 0, to consider the journey
+     */
+    let parcels = [];
+    for (let i = 0; i < parcelCount; i++) {
+        let address = randomPick(Object.keys(roadGraph));
+        let place;  // Still needs to be initialized.
+        
+        // Use a do/while loop to prevent creation of any Parcel object 
+        // whose pickup and drop points are referencing the same place 
+        // (i.e., they are sent from the same place that they are addressed 
+        // to).
+        do {
+            place = randomPick(Object.keys(roadGraph));
+        } while (place == address);
+
+        parcels.push({place, address});
+    }
+
+    return new VillageState("Post Office", parcels);
+};
+
+// End of VillageState Class
+
 
 // Demonstration that the above code is behaving in an expected manner.
 let first = new VillageState(
