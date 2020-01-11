@@ -238,3 +238,176 @@ console.log(next.parcels);
 // it continues to be pure.
 console.log(first.place);
 // → Post Office
+
+// MAIN EXECUTABLE FUNCTION
+
+function runRobot(state, robot, memory) {
+    /*
+     * `runRobot` is the executable function which takes in an object of
+     * Robot (or functions implmenting a similar interface) in the form of 
+     * `robot`, a starting `VillageState` instance which is given to the 
+     * `robot` and a `memory` object which keeps a history of robot's actions 
+     * to deliver all the parcels to their respective addresses.
+     *
+     * This function is used to simulate the whole process of the automaton
+     * picking up the individual parcels by visiting every location and
+     * delivering them to their specified addresses.
+     */
+
+    // Continue with simulation until all the parcels have been delivered.
+    for (let turn = 0;; turn++) {
+
+        // A series of print statements for debugging purposes.
+        console.log(`On turn ${turn} at ${state.place}:\n\nParcels:`);
+        for (let parcel of state.parcels) {
+            let {place:pickup, address} = parcel;
+            console.log(`Parcel ${state.parcels.indexOf(parcel) + 1}: from ${pickup} to ${address}`)
+        }
+        console.log('\n');
+
+        if (state.parcels.length == 0) {
+            console.log(`Done in ${turn} turns`);
+            break;
+        }
+
+        let action = robot(state, memory);
+        state = state.move(action.direction);
+        memory = action.memory;
+        console.log(`Action: Moved to ${action.direction}\n`);
+    }
+}
+
+
+// Implementation of randomRobot
+
+function randomRobot(state) {
+    /*
+     * `randomRobot` utilizes a naive strategy of just walking in a 
+     * random direction every turn.
+     * 
+     * Using this strategy, it is very much possible for the robot to
+     * eventually run into all the parcels (by reaching their pickup places)
+     * and then also at some point, will reach the palce where they should
+     * be delivered.
+     *
+     * Since this robot doesn't need to remember anything, it omits the `memory`
+     * property in its returned object (`action`).
+     *
+     * Returns an `action` object with a randomly selected place that
+     * can be legally travelled to & from the current place (because a
+     * road exists between the two aforementioned locations).
+     */
+    
+    return {direction: randomPick(roadGraph[state.place])};
+}
+
+// End of Implementation of randomRobot
+
+
+// SIMULATION of RandomRobot
+
+runRobot(VillageState.random(), randomRobot);
+
+// Result: Due to the naive approach taken by randomRobot, the robot
+// takes a lot of turns to deliver the parcels because it isn't planning
+// ahead very well (doesn't use memory).
+
+// End of SIMULATION of RandomRobot
+
+
+// Implementation of routeRobot
+
+// One possible route which covers every place in Meadowfield.
+const mailRoute = [
+    "Alice's House", "Cabin",         "Alice's House", "Bob's House",
+    "Town Hall",     "Daria's House", "Ernie's House",
+    "Grete's House", "Shop",          "Grete's House", "Farm", 
+    "Marketplace",   "Post Office"
+];
+
+function routeRobot(state, memory) {
+    /*
+     * `randomRobot` utilizes a strategy similar to the way real-world 
+     * mail delivery works.
+     *
+     * The robot travels through a route (that passes all places in the village)
+     * twice, at which point it is guaranteed to be done. This is because, in the
+     * first pass, it could pickup all the parcels in the village (as well as 
+     * make some deliveries) and in the second pass, it will deliver the parcels
+     * left under his possession after the first pass. The robot doesn't need 
+     * to do any pickups in the second pass.
+     *
+     * No matter what, the robot will take a maximum of 26 turns (twice the 13-step
+     * `mailRoute`) to complete the objective, but in most cases, it will be usually less. 
+     *
+     * Returns an `action` object where `direction` references the place where robot
+     * will travel next and `memory` will reference an array representing the remaining
+     * places that needs to be visited after robot moves to the `direction` place.
+     */
+    
+    if (memory.length == 0) {
+        memory = mailRoute;
+    }
+
+    return {
+        direction: memory[0],
+           memory: memory.slice(1)
+    };
+}
+
+// End of Implementation of routeRobot
+
+
+// SIMULATION of routeRobot
+
+runRobot(VillageState.random(), routeRobot, []);
+
+// End of SIMULATION of routeRobot
+
+
+// Implementation of goalOrientedRobot
+
+function findRoute(graph, from, to) {
+    let work = [{at: from, route: []}];
+
+    for (let i = 0; i < work.length; i++) {
+        let {at, route} =  work[i];
+
+        for (let place of graph[at]) {
+            if (place == to) {
+                return route.concat(place);
+            }
+
+            if (!work.some(w => w.at == place)) {
+                work.push({at: place, route: route.concat(place)});
+            }
+        }
+    }
+}
+
+function goalOrientedRobot({place, parcels}, route) {
+    if (route.length == 0) {
+        let parcel = parcels[0];
+
+        if (parcel.place != place) {
+            route = findRoute(roadGraph, place, parcel.place);
+        }
+        else {
+            route = findRoute(roadGraph, place, parcel.address);
+        }
+    }
+
+    return {
+        direction: route[0],
+        memory: route.slice(1);
+    }
+}
+
+// End of Implementation of goalOrientedRobot
+
+
+// SIMULATION of goalOrientedRobot
+
+runRobot(VillageState.random(), goalOrientedRobot, []);
+
+// End of SIMULATION of goalOrientedRobot
