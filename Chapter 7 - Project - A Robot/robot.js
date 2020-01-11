@@ -23,24 +23,24 @@ const roads = [
 
 function buildGraph(edges) {
     /* 
-    `graph` is a map-like Object which does not derive properties from
-    any prototype including Object.prototype.
-     
-    `graph` represents the network of roads in the village. It contains a
-    mapping of places with an array of roads which connect them to other places
-    in the village.
-    */
+     * `graph` is a map-like Object which does not derive properties from
+     * any prototype including Object.prototype.
+     *  
+     * `graph` represents the network of roads in the village. It contains a
+     * mapping of places with an array of roads which connect them to other places
+     * in the village.
+     */
 
     let graph = Object.create(null);
 
     function addEdge(from, to) {
         /* 
-        Add a new property with an edge connecting to the destination 
-        if no place exists matching the source location;
-        
-        Otherwise, add the destination to an existing array containing the roads
-        from the given source location.
-        */
+         * Add a new property with an edge connecting to the destination 
+         * if no place exists matching the source location;
+         * 
+         * Otherwise, add the destination to an existing array containing the roads
+         * from the given source location.
+         */
  
         if (graph[from] == null) {
             graph[from] = [to];
@@ -72,19 +72,25 @@ function buildGraph(edges) {
 const roadGraph = buildGraph(roads);
 
 
+// VillageState Class
+
 class VillageState {
     /*
-    This class models the current state of the mail-delivery robot.
-    
-    The class holds information about the current place (location)
-    of the Robot as well as an Array containing instances of Parcels
-    currently being carried by him i.e., parcels that are yet to be 
-    delivered to their proper destination and hence, are at robot's
-    current place.
-
-    This will include all the parcels that are either being carried over
-    from the previous state or have just been picked up by the robot to be
-    delivered to their specified address.
+    * This class models the current state of the mail-delivery robot.
+    * 
+    * The class holds information about the current place (location)
+    * of the Robot as well as an Array containing instances of Parcels
+    * currently being carried by him (i.e., parcels that have been picked up
+    * but still needs to be delivered to their proper destination) as well as
+    * parcels that still needs to be picked up by the Robot.
+    *
+    * Hence, the `parcels` represents all the parcels needs to be picked up &
+    * delivered by the robot to mark the process of mail-delivery as completed
+    * and terminal condition for a simulation.
+    * 
+    * This will include all the parcels that are either being carried over
+    * from the previous state or have just been picked up by the robot to be
+    * delivered to their specified address.
     */
 
     constructor(place, parcels) {
@@ -94,17 +100,17 @@ class VillageState {
 
     move(destination) {
         /* 
-        Moves the Robot to the destination if a road exists between the current
-        place and the designated destination. Otherwise, returns back the original 
-        instance (containing info about current state).
-        
-        This function returns a new `VillageState` instance if it's possible for
-        the Robot to directly move to the specified destination.
-        
-        Therefore, `move` is a pure function because it does not modify the object
-        representing robot's current state. This also allows us to easily keep a track 
-        of the little automaton's movements.
-        */
+         * Moves the Robot to the destination if a road exists between the current
+         * place and the designated destination. Otherwise, returns back the original 
+         * instance (containing info about current state).
+         * 
+         * This function returns a new `VillageState` instance if it's possible for
+         * the Robot to directly move to the specified destination.
+         * 
+         * Therefore, `move` is a pure function because it does not modify the object
+         * representing robot's current state. This also allows us to easily keep a track 
+         * of the little automaton's movements.
+         */
 
         // If no road exists between the current place and the destination,
         // return back the orginal state (bound to `this`) which called the
@@ -129,19 +135,18 @@ class VillageState {
             // delivering the parcels at their specified address (which is same as
             // `destination`). 
             // 
-            // `p` represents each parcel present at current `place`.
+            // `p` represents each parcel that are currently carried by the robot
+            // or still needs to be picked up by him.
             let parcels = this.parcels.map(p => {
-                // If the parcel is being carried over from a previous state,
-                // i.e., it was already in robot's possession before moving to
-                // the `destination`, then continue to keep it by adding it to the
-                // newly created set of undelivered parcels.
+                // Do not modify the Parcel instance if the robot has yet not picked
+                // up the `parcel`.
                 if (p.place != this.place) {
                     return p;
                 }
-
-                // Otherwise, pick up the new Parcel and add it to the set of
-                // Parcel objects to be delivered to their specified address.
-                return {
+                // Otherwise, change the `place` property of the Parcel object to point to
+                // the `destination` of any parcel(s), picked up by the robot (at current place) or
+                // is already in robot's possession.
+                return { 
                     place: destination, 
                     address: p.address
                 };
