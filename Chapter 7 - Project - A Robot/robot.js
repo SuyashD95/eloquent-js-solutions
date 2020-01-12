@@ -65,7 +65,6 @@ function buildGraph(edges) {
     return graph;
 }
 
-
 // Create a Graph object that can be used to organize & reference the
 // network of roads that exist in Meadowfield village.
 //
@@ -79,6 +78,39 @@ function randomPick(array) {
      */
     let choice = Math.floor(Math.random() * array.length);
     return array[choice];
+}
+
+function findRoute(graph, from, to) {
+    /*
+     * Find the shortest route between `from` and `to` places. The path is found
+     * using the breadth-first search approach and the returned path is the first
+     * one which reaches the destination from the given starting location.
+     */
+    
+    // A `work` list is an array of places that should be explored next, along with
+    // the route that got us there. It starts with just the start position and an
+    // empty route.
+    let work = [{at: from, route: []}];
+
+    for (let i = 0; i < work.length; i++) {
+        // The search operates by taking the next item in the `work` list.
+        let {at, route} =  work[i];
+
+        // Explore all the places that can be reached via roads originating from
+        // the `at` place.
+        for (let place of graph[at]) {
+            // If one of them is the goal, a finished route can be returned. 
+            if (place == to) {
+                return route.concat(place);
+            }
+
+            // Otherwise, if we haven’t looked at this place before, a new item 
+            // is added to the `work` list.
+            if (!work.some(w => w.at == place)) {
+                work.push({at: place, route: route.concat(place)});
+            }
+        }
+    }
 }
 
 // End of Utilitarian Code
@@ -367,34 +399,47 @@ runRobot(VillageState.random(), routeRobot, []);
 
 // Implementation of goalOrientedRobot
 
-function findRoute(graph, from, to) {
-    let work = [{at: from, route: []}];
-
-    for (let i = 0; i < work.length; i++) {
-        let {at, route} =  work[i];
-
-        for (let place of graph[at]) {
-            if (place == to) {
-                return route.concat(place);
-            }
-
-            if (!work.some(w => w.at == place)) {
-                work.push({at: place, route: route.concat(place)});
-            }
-        }
-    }
-}
-
 function goalOrientedRobot({place, parcels}, route) {
+    /*
+     * The robot tries to actively decide on the shortest route between places to pick up
+     * & deliver parcels.
+     *
+     * This robot uses its memory value as a list of directions to move in, just like the 
+     * route-following robot. Whenever that list is empty, it has to figure out 
+     * what to do next. 
+     * 
+     * It takes the first undelivered parcel in the set and, if that parcel hasn’t been 
+     * picked up yet, plots a route toward it. 
+     * 
+     * If the parcel has been picked up, it still needs to be delivered, so the robot creates 
+     * a route toward the delivery address instead.
+     *
+     * Returns an `action` object where `direction` property references the place where
+     * the robot will travel next and the `memory` property will reference an array 
+     * representing the remaining places that needs to be visited in the route, 
+     * after robot moves to the `direction` place.
+     */
+    
+    // If no route is decided, then find the shortest route to the pickup point of the
+    // first parcel in `parcels` (if its yet to be picked). Otherwise, if the parcel has 
+    // already been picked, then find the shortest route to the parcel's address.
+    // 
+    // Skip the step of finding a route, if a robot is already travelling through a route.
     if (route.length == 0) {
+        console.log("Decision: Robot decides on a new route.\n");
+
         let parcel = parcels[0];
 
         if (parcel.place != place) {
             route = findRoute(roadGraph, place, parcel.place);
+            console.log(`Route to PICK UP Parcel 1 at ${parcel.place}: ${route}`);
         }
         else {
             route = findRoute(roadGraph, place, parcel.address);
+            console.log(`Route to DELIVER Parcel 1 to ${parcel.address}: ${route}`);
         }
+    } else {
+        console.log("Decision: Robot continues to move in the already decided route");
     }
 
     return {
