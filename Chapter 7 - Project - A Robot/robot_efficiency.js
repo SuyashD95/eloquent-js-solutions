@@ -9,6 +9,25 @@ If you solved the previous exercise, you might want to use your compareRobots fu
 */
 
 function optimizedRobot({place, parcels}, route) {
+    /*
+     * This robot is an optimized version of the goalOrientedRobot as it improves 
+     * in certain key areas.
+     *
+     * The goal oriented robot only finds the shortest route for the topmost parcel in
+     * the stack (parcel[0]) which means it only looks for a short term solution and might
+     * miss out another prospective routes which are better than the one mentioned above.
+     *
+     * Hence, to resolve this shortcoming, `optimizedRobot` finds the shortest routes to each
+     * of the `parcels` from a given `place` and then, selects the one which satisfies the 
+     * following criteria:
+     *
+     * 1. It priortizes parcel pickups over deliveries. It only starts creating routes with the
+     * goal of delivering parcels when all the parcels have been picked up.
+     *
+     * 2. Minimum number of intermediate stops/places. If two routes having the same action type
+     * either pickup or delivery are given, the robot will select the route with the lesser amount
+     * of intermediate stops.
+     */
     let shortest_route = route;
 
     if (route.length == 0) {
