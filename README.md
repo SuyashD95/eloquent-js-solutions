@@ -69,3 +69,9 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         2. [Robot Efficiency](https://eloquentjavascript.net/07_robot.html#i_VbBsQJ1lp6 "Jump to Problem Statement of 'Robot Efficiency' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%207%20-%20Project%20-%20A%20Robot/robot_efficiency.js)) (**Recommended**)
 
         3. [Persistent Group](https://eloquentjavascript.net/07_robot.html#i_s+ntyh5xrm "Jump to Problem Statement of 'Persistent Group' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%207%20-%20Project%20-%20A%20Robot/persistent_group.js))
+
+8. [Bugs and Errors](https://eloquentjavascript.net/08_error.html "Jump to Chapter 8 on the Official Site")
+
+    1. [Retry](https://eloquentjavascript.net/08_error.html#i_n1zYouiAfX "Jump to Problem Statement of 'Retry' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%208%20-%20Bugs%20and%20Errors/retry.js)) (**Recommended**)
+
+    2. [The Locked Box](https://eloquentjavascript.net/08_error.html#i_iGlwnUbkRs "Jump to Problem Statement of 'The Locked Box' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%208%20-%20Bugs%20and%20Errors/the_locked_box.js)) (**Recommended**)
