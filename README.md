@@ -83,3 +83,23 @@ My solutions to the Programming Assignment Questions given at the end of chapter
     2. [Quoting Style](https://eloquentjavascript.net/09_regexp.html#i_dTiEW14oG0 "Jump to Problem Statement of 'Quoting Style' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%209%20-%20Regular%20Expressions/quoting_style.js)) (**Recommended**)
 
     3. [Numbers Again](https://eloquentjavascript.net/09_regexp.html#i_izldJoT3uv "Jump to Problem Statement of 'Numbers Again' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%209%20-%20Regular%20Expressions/numbers_again.js)) (**Recommended**)
+
+10. [Modules](https://eloquentjavascript.net/10_modules.html "Jump to Chapter 10 on the Official Site")
+
+    + It is **recommended** to revisit this chapter after finishing up the section on Node (Part 3 of Eloquent JS) as it will further improve the understanding of the reader on topics like CommonJS modules and dependencies.
+
+    + I have decided **not to provide** answers of the **1<sup>st</sup> & 3<sup>rd</sup>** programming exercises due to the theoretical, opinion based nature of the questions.
+
+        You are more than welcome to attempt these questions and (if you want) look at possible solutions on the official site.
+
+    + **NOTE**: The solution to the **2<sup>nd</sup>** programming exercise (while correct) will only work on your if both **NodeJS** & **graph** module/package are **installed** on your system.
+
+    + **Programming Exercises**
+
+        1. [A Modular Robot](https://eloquentjavascript.net/10_modules.html#i_CJKk6NIC0T "Jump to Problem Statement of 'A Modular Robot' on Official Site") (Solution **NOT PROVIDED**)
+
+        2. [Roads Module](https://eloquentjavascript.net/10_modules.html#i_+pU//gQmZ8 "Jump to Problem Statement of 'Roads Module' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2010%20-%20Modules/roads_module.js))
+
+        3. [Circular Dependencies](https://eloquentjavascript.net/10_modules.html#i_E/zWqBFdy8 "Jump to Problem Statement of 'Circular Dependencies' on Official Site") (Solution **NOT PROVIDED**)
+
+        
