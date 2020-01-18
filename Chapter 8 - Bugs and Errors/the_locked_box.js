@@ -21,6 +21,7 @@ Write a function called withBoxUnlocked that takes a function value as argument,
 
 For extra points, make sure that if you call withBoxUnlocked when the box is already unlocked, the box stays unlocked.
 */
+"use strict";
 
 const box = {
     locked: true,

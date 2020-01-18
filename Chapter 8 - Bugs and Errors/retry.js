@@ -7,6 +7,7 @@ Say you have a function primitiveMultiply that in 20 percent of cases multiplies
 Make sure you handle only the exceptions you are trying to handle.
 
 */ 
+"use strict";
 
 class MultiplicatorUnitFailure extends Error {}
 
