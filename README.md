@@ -75,3 +75,11 @@ My solutions to the Programming Assignment Questions given at the end of chapter
     1. [Retry](https://eloquentjavascript.net/08_error.html#i_n1zYouiAfX "Jump to Problem Statement of 'Retry' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%208%20-%20Bugs%20and%20Errors/retry.js)) (**Recommended**)
 
     2. [The Locked Box](https://eloquentjavascript.net/08_error.html#i_iGlwnUbkRs "Jump to Problem Statement of 'The Locked Box' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%208%20-%20Bugs%20and%20Errors/the_locked_box.js)) (**Recommended**)
+
+9. [Regular Expressions](https://eloquentjavascript.net/09_regexp.html "Jump to Chapter 9 on the Official Site")
+
+    1. [Regexp Golf](https://eloquentjavascript.net/09_regexp.html#i_vDM8PzwQWU "Jump to Problem Statement of 'Regexp Golf' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%209%20-%20Regular%20Expressions/regexp_golf.js))
+
+    2. [Quoting Style](https://eloquentjavascript.net/09_regexp.html#i_dTiEW14oG0 "Jump to Problem Statement of 'Quoting Style' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%209%20-%20Regular%20Expressions/quoting_style.js)) (**Recommended**)
+
+    3. [Numbers Again](https://eloquentjavascript.net/09_regexp.html#i_izldJoT3uv "Jump to Problem Statement of 'Numbers Again' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%209%20-%20Regular%20Expressions/numbers_again.js)) (**Recommended**)
