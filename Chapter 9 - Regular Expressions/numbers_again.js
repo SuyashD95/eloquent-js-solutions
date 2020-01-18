@@ -6,6 +6,9 @@ Write an expression that matches only JavaScript-style numbers. It must support 
  
 */
 
+// NOTE: My answer to this question (`number` regex) gets the job done but is not perfect.
+// A better solution is provided at the Official Site @ 'https://eloquentjavascript.net/code/#9.3'.
+
 // Fill in this regular expression.
 let number = /^([.]\d+|\d+[.]|[+-]?\d+|\d+[.]\d+|\d[.]?\d*[eE][-+]?\d+)$/;
 
