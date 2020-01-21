@@ -102,4 +102,20 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
         3. [Circular Dependencies](https://eloquentjavascript.net/10_modules.html#i_E/zWqBFdy8 "Jump to Problem Statement of 'Circular Dependencies' on Official Site") (Solution **NOT PROVIDED**)
 
-        
+11. [Asynchronous Programming](https://eloquentjavascript.net/11_async.html "Jump to Chapter 11 on the Official Site")
+
+    + **Additional Resources**
+    
+        The reader might face a lot of difficulty in understanding the contents being covered in this chapter. Hence, I am listing a bunch of *additional resources* that I hope will assist the readers in understanding the concepts:
+
+        + [Async JS Crash Course - Callbacks, Promises, Async Await (created by Traversy Media on YouTube)](https://www.youtube.com/watch?v=PoRJizFvM7s&list=WL&index=372&t=0s "Link to the YouTube video")
+
+        + [Actually Understanding Asynchronous JavaScript (presented by Steve Kinney at NEJS CONF 2018)](https://www.youtube.com/watch?v=8LCx9Dir8BU&list=WL&index=370&t=0s "Link to the YouTube video covering the Workshop")
+
+        + [Error handling with Async/Await in JS (written by Ian Segers on itnext.io)](https://itnext.io/error-handling-with-async-await-in-js-26c3f20bc06a "Link to the blog post at itnext.io")   
+
+    + **Programming Exercises**
+
+        1. [Tracking The Scalpel](https://eloquentjavascript.net/11_async.html#i_UvyahfUnfl "Jump to Problem Statement of 'Tracking The Scalpel' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2011%20-%20Asynchronous%20Programming/tracking_the_scalpel.js)) (**Recommended**)
+
+        2. [Building Promise.All](https://eloquentjavascript.net/11_async.html#i_Ug+Dv9Mmsw "Jump to Problem Statement of 'Building Promise.All' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2011%20-%20Asynchronous%20Programming/building_promise_all.js)) (**Recommended**)
