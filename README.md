@@ -8,7 +8,7 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 ----
 1. [Values, Types & Operators](https://eloquentjavascript.net/01_values.html "Jump to Chapter 1 on the official site")
     
-    **No Programming Exercises** are available for this chapter
+    **No Programming Exercises** are available for this chapter.
 
 2. [Program Structure](https://eloquentjavascript.net/02_program_structure.html "Jump to Chapter 2 on the Official Site")
     
@@ -119,3 +119,29 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         1. [Tracking The Scalpel](https://eloquentjavascript.net/11_async.html#i_UvyahfUnfl "Jump to Problem Statement of 'Tracking The Scalpel' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2011%20-%20Asynchronous%20Programming/tracking_the_scalpel.js)) (**Recommended**)
 
         2. [Building Promise.All](https://eloquentjavascript.net/11_async.html#i_Ug+Dv9Mmsw "Jump to Problem Statement of 'Building Promise.All' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2011%20-%20Asynchronous%20Programming/building_promise_all.js)) (**Recommended**)
+
+12. [Project: A Programming Language](https://eloquentjavascript.net/12_language.html "Jump to Chapter 12 on the Official Site")
+
+    + *It is **highly recommended** to read a line-by-line analysis of the key sections of project's code to develop a better understanding of the approach undertaken by the author and can immensely help in solving the programming exercises.*
+
+        [Deep Dive into the code of Chapter 12's Project](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2012%20-%20Project%20-%20A%20Programming%20Language/language.js "Line by line analysis of code in language.js") 
+
+    + I have decided **not to provide** answer to the **2<sup>nd</sup>** programming exercise due to its theoretical, opinion based nature.
+
+        You are more than welcome to attempt these questions and (if you want) look at possible solutions on the official site. 
+
+    + **Programming Exercises**
+
+        1. [Arrays](https://eloquentjavascript.net/12_language.html#i_uQzJv9I1Z6 "Jump to Problem Statement of 'Arrays' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2012%20-%20Project%20-%20A%20Programming%20Language/arrays.js)) (**Recommended**)
+
+        2. [Closure](https://eloquentjavascript.net/12_language.html#i_hOd+yVxaku "Jump to Problem Statement of 'Closure' on Official Site") (Solution **NOT PROVIDED**)
+
+        3. [Comments](https://eloquentjavascript.net/12_language.html#i_/OBuIOX390 "Jump to Problem Statement of 'Closure' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2012%20-%20Project%20-%20A%20Programming%20Language/comments.js)) (**Recommended**)
+
+        4. [Fixing Scope](https://eloquentjavascript.net/12_language.html#i_Y9ZDMshYCQ "Jump to Problem Statement of 'Fixing Scope' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2012%20-%20Project%20-%20A%20Programming%20Language/fixing_scope.js)) (**Recommended**)
+
+### Part 2: Browser
+----
+13. [JavaScript and the Browser](https://eloquentjavascript.net/13_browser.html "Jump to Chapter 13 on the Official Site")
+
+    **No Programming Exercises** are available for this chapter.
