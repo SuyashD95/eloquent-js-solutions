@@ -145,3 +145,12 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 13. [JavaScript and the Browser](https://eloquentjavascript.net/13_browser.html "Jump to Chapter 13 on the Official Site")
 
     **No Programming Exercises** are available for this chapter.
+
+14. [The Document Object Model](https://eloquentjavascript.net/14_dom.html "Jump to Chapter 14 on the Official Site")
+
+    1. [Build A Table](https://eloquentjavascript.net/14_dom.html#i_g/5UC3zznV "Jump to Problem Statement of 'Build A Table' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2014%20-%20The%20Document%20Object%20Model/build_a_table.html)) (**Recommended**)
+
+    2. [Elements By Tag Name](https://eloquentjavascript.net/14_dom.html#i_VSftnyRTsV "Jump to Problem Statement of 'Elements By Tag Name' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2014%20-%20The%20Document%20Object%20Model/elements_by_tag_name.html)) (**Recommended**)
+
+    3. [The Cat's Hat](https://eloquentjavascript.net/14_dom.html#i_b/LAqZUqyo "Jump to Problem Statement of 'The Cat's Hat' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2014%20-%20The%20Document%20Object%20Model/the_cats_hat.html)) (**Recommended**)
+
