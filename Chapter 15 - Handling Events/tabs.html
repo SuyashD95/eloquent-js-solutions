@@ -1,0 +1,61 @@
+<!--
+
+3 - Tabs (4/3/2020)
+
+Tabbed panels are widely used in user interfaces. They allow you to select an interface panel by choosing from a number of tabs “sticking out” above an element.
+
+In this exercise you must implement a simple tabbed interface. Write a function, asTabs, that takes a DOM node and creates a tabbed interface showing the child elements of that node. It should insert a list of <button> elements at the top of the node, one for each child element, containing text retrieved from the data-tabname attribute of the child. All but one of the original children should be hidden (given a display style of none). The currently visible node can be selected by clicking the buttons.
+
+When that works, extend it to style the button for the currently selected tab differently so that it is obvious which tab is selected.
+
+-->
+
+<tab-panel>
+    <div data-tabname="one">Tab one</div>
+    <div data-tabname="two">Tab two</div>
+    <div data-tabname="three">Tab three</div>
+</tab-panel>
+<script>
+    function switchTab(event) {
+        let buttonText = event.target.textContent;
+    
+        let firstDiv = document.querySelectorAll("div")[0];
+        let secondDiv = document.querySelectorAll("div")[1];
+        let thirdDiv = document.querySelectorAll("div")[2];
+    
+        switch(buttonText) {      
+            case "one":
+                firstDiv.style.display = "block";
+                secondDiv.style.display = "none";
+                thirdDiv.style.display = "none";
+                break;
+            case "two":
+                firstDiv.style.display = "none";
+                secondDiv.style.display = "block";
+                thirdDiv.style.display = "none";
+                break;
+            case "three":
+                firstDiv.style.display = "none";
+                secondDiv.style.display = "none";
+                thirdDiv.style.display = "block";
+                break;
+        }
+    }
+  
+    function asTabs(node) {
+        let tabLength = node.children.length;
+    
+        for (let i = 0; i < tabLength; i++) {
+            let tabButton = document.createElement("button");
+      
+            tabButton.textContent = document.querySelectorAll("div")[i].getAttribute("data-tabname");
+            node.querySelectorAll("div")[i].style.display = "none";
+            tabButton.addEventListener("click", switchTab);
+            node.insertBefore(tabButton, document.querySelector("div"));
+        }
+
+        document.querySelector("div").style.display = "block";
+    }
+  
+    asTabs(document.querySelector("tab-panel"));
+</script>
