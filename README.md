@@ -154,3 +154,10 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
     3. [The Cat's Hat](https://eloquentjavascript.net/14_dom.html#i_b/LAqZUqyo "Jump to Problem Statement of 'The Cat's Hat' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2014%20-%20The%20Document%20Object%20Model/the_cats_hat.html)) (**Recommended**)
 
+15. [Handling Events](https://eloquentjavascript.net/15_event.html "Jump to Chapter 15 on the Official Site")
+
+    1. [Balloon](https://eloquentjavascript.net/15_event.html#i_ZPJB9UFdQA "Jump to Problem Statement of 'Balloon' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/balloon.html) (**Recommended**)
+
+    2. [Mouse Trail](https://eloquentjavascript.net/15_event.html#i_NOgRH0Y9st "Jump to Problem Statement of 'Mouse Trail' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/mouse_trail.html)) (**Recommended**)
+
+    3. [Tabs](https://eloquentjavascript.net/15_event.html#i_Kk1WKx2anJ "Jump to Problem Statement of 'Tabs' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/tabs.html)) (**Recommended**)
