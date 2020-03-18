@@ -161,3 +161,17 @@ My solutions to the Programming Assignment Questions given at the end of chapter
     2. [Mouse Trail](https://eloquentjavascript.net/15_event.html#i_NOgRH0Y9st "Jump to Problem Statement of 'Mouse Trail' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/mouse_trail.html)) (**Recommended**)
 
     3. [Tabs](https://eloquentjavascript.net/15_event.html#i_Kk1WKx2anJ "Jump to Problem Statement of 'Tabs' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/tabs.html)) (**Recommended**)
+
+16. [Project: A Platform Game](https://eloquentjavascript.net/16_game.html "Jump to Chapter 16 on the Official Site")
+
+    + *It is **highly recommended** to read a line-by-line analysis of the key sections of project's code to develop a better understanding of the approach undertaken by the author and can immensely help in solving the programming exercises.*
+
+        [Deep Dive into the code of Chapter 16's Project](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/code/platform_game.js "Line by line analysis of code in platform_game.js")
+    
+    + **Programming Exercises**
+
+        1. [Game Over](https://eloquentjavascript.net/16_game.html#i_tFsh86eaJC "Jump to Problem Statement of 'Game Over' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/game_over.html)) (**Recommended**)
+
+        2. [Pausing The Game](https://eloquentjavascript.net/16_game.html#i_cNfzuXtVqI "Jump to Problem Statement of 'Pausing The Game' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/pausing_the_game.html))  (**Recommended**) 
+
+        3. [A Monster](https://eloquentjavascript.net/16_game.html#i_tKK8cGG5os "Jump to Problem Statement of 'A Monster' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/a_monster.html)) (**Recommended**)
