@@ -175,3 +175,27 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         2. [Pausing The Game](https://eloquentjavascript.net/16_game.html#i_cNfzuXtVqI "Jump to Problem Statement of 'Pausing The Game' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/pausing_the_game.html))  (**Recommended**) 
 
         3. [A Monster](https://eloquentjavascript.net/16_game.html#i_tKK8cGG5os "Jump to Problem Statement of 'A Monster' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2016%20-%20Project%20-%20A%20Platform%20Game/a_monster.html)) (**Recommended**)
+
+17. [Drawing on Canvas](https://eloquentjavascript.net/17_canvas.html "Jump to Chapter 17 on the Official Site")
+
+    + I have decided **not to provide** answer to the **4<sup>th</sup>** programming exercise due to its theoretical, opinion based nature.
+
+        You are more than welcome to attempt these questions and (if you want) look at possible solutions on the official site.
+
+    + **DISCLAIMER**: I found this chapter's exercises to be the most challenging ones yet... In fact, I was unable to find a perfect solution to any of the given exercises...
+    
+        I was only able to get them partially right, but was **unsuccessful** *in writing a solution that met all of the given requirements*, of a particular question.
+
+        Initially, I wanted to upload my imperfect solutions but then also realized that uploading them could potentially lead the readers to reach adopt bad practices/code.
+
+        Due to the aforementioned reason, all of my uploaded solutions are **IDENTICAL** to the given solutions on the official site.
+
+    + **Programming Exercises**
+
+        1. [Shapes](https://eloquentjavascript.net/17_canvas.html#i_sZheOHQF5N "Jump to Problem Statement of 'Shapes' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2017%20-%20Drawing%20on%20Canvas/shapes.html)) (**Recommended**)
+
+        2. [The Pie Chart](https://eloquentjavascript.net/17_canvas.html#i_bJrtZj5liF "Jump to Problem Statement of 'The Pie Chart' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2017%20-%20Drawing%20on%20Canvas/the_pie_chart.html))
+
+        3. [A Bouncing Ball](https://eloquentjavascript.net/17_canvas.html#i_IoBBN8CiQ5 "Jump to Problem Statement of 'A Bouncing Ball' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2017%20-%20Drawing%20on%20Canvas/a_bouncing_ball.html)) (**Recommended**)
+
+        4. [Precomputed Mirroring](https://eloquentjavascript.net/17_canvas.html#i_3ePcd0S4v0 "Jump to Problem Statement of 'Precomputed Mirroring' on Official Site") (Solution **NOT PROVIDED**)
