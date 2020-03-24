@@ -1,0 +1,28 @@
+<!--
+
+2 - A JavaScript Workbench (24/3/2020)
+
+Build an interface that allows people to type and run pieces of JavaScript code.
+
+Put a button next to a <textarea> field that, when pressed, uses the Function constructor we saw in Chapter 10 to wrap the text in a function and call it. Convert the return value of the function, or any error it raises, to a string and display it below the text field.
+-->
+
+<textarea id="code">return "hi";</textarea>
+<button id="button">Run</button>
+<pre id="output"></pre>
+
+<script defer type="text/javascript">
+    let code = document.querySelector("#code");
+    let button = document.querySelector("#button");
+    let output = document.querySelector("#output");
+
+    button.addEventListener("click", event => {
+        try {
+            let result = (Function("", code.value))(); // Immediately Invoked Function Expression (IIFE)
+            output.textContent = result;
+        }
+        catch(error) {
+            output.textContent = error;
+        }
+    });
+</script>
