@@ -1,0 +1,229 @@
+<!-- 
+
+3 - Conway's Game of Life (24/3/2020)
+
+Conway’s Game of Life is a simple simulation that creates artificial “life” on a grid, each cell of which is either alive or not. Each generation (turn), the following rules are applied:
+
+Any live cell with fewer than two or more than three live neighbors dies.
+
+Any live cell with two or three live neighbors lives on to the next generation.
+
+Any dead cell with exactly three live neighbors becomes a live cell.
+
+A neighbor is defined as any adjacent cell, including diagonally adjacent ones.
+
+Note that these rules are applied to the whole grid at once, not one square at a time. That means the counting of neighbors is based on the situation at the start of the generation, and changes happening to neighbor cells during this generation should not influence the new state of a given cell.
+
+Implement this game using whichever data structure you find appropriate. Use Math.random to populate the grid with a random pattern initially. Display it as a grid of checkbox fields, with a button next to it to advance to the next generation. When the user checks or unchecks the checkboxes, their changes should be included when computing the next generation.
+-->
+<div id="grid"></div>
+<button id="next">Next generation</button>
+<button id="autorun">Autorun Simulation</button>
+<button id="stop" style="display: none;">Stop Simulation</button>
+
+<script defer>
+    const gridWidth = 20;
+    const gridHeight = 15;
+    const minNeighborsAlive = 2;
+    const maxNeighborsAlive = 3;
+
+    let grid = document.querySelector("#grid");
+    let next = document.querySelector("#next");
+    let autorun = document.querySelector("#autorun");
+    let stop = document.querySelector("#stop");
+  
+    /*
+     * Returns a map-like object (its prototype is `null`) to store the
+     * properties of a cell in the grid used to simulate Conway's Game of Life.
+     */
+    function generateCell(input, row, col) {
+        return Object.assign(Object.create(null), {
+            element: input,
+            row: row + 1,
+            col: col + 1,
+            alive: input.checked
+        });
+    }
+  
+    /*
+     * An event handler which is responsible to handle "change" events in
+     * checkboxes. It is triggered when user checks/unchecks the boxes (which are
+     * used to indicate whether a cell is alive/dead) in the simulation.
+     */
+    function cellStatusChange(event) {
+        // Stops simulation if autorun has been enabled by the user.
+        stopSimulation();
+
+        let row = Number(event.target.getAttribute("data-row"));
+        let col = Number(event.target.getAttribute("data-col"));
+        // index of cell in the grid           
+        let index = row * gridWidth + col;  
+        cells[index].alive = event.target.checked;
+    }
+  
+    /*
+     * This function is used to create a matrix of checkboxes used to represent
+     * the cells in Conway's Game of Life. This function returns an array of 
+     * Cells (emulated by checkboxes in the HTML document).
+     */
+    function createCellGrid(width, height) {
+        let cells = [];
+    
+        for (let row = 0; row < height; row++) {
+            for (let col = 0; col < width; col++) {
+                let input = document.createElement("input");
+                input.type = "checkbox";
+                // Custom attributes added to identify each particular cell (checkbox), 
+                // based on their position in the grid. 
+                input.setAttribute("data-row", row);
+                input.setAttribute("data-col", col);
+        
+                if (Math.random() > 0.5) {
+                    input.setAttribute("checked", input);
+                }
+        
+                input.addEventListener("change", cellStatusChange);
+        
+                grid.appendChild(input);
+                cells.push(generateCell(input, row, col));
+            }
+            grid.appendChild(document.createElement("br"));
+        }
+        return cells;
+    }
+  
+    // Set up the grid for GENERATION 0
+    // --------------------------------
+    let cells = createCellGrid(gridWidth, gridHeight);
+
+    /*
+     * This function returns an Array of all the cells which are located next to
+     * the given cell.
+     */
+    function getNeighbors(centralCell) {
+        const minAdjRow = centralCell.row - 1;
+        const maxAdjRow = centralCell.row + 1;
+        const minAdjCol = centralCell.col - 1;
+        const maxAdjCol = centralCell.col + 1;
+        // neigbors => adjacentRows && adjacentCols && !centralCell
+        return cells.filter(cell => {
+        return (cell.row >= minAdjRow) && (cell.row <= maxAdjRow)
+            && (cell.col >= minAdjCol) && (cell.col <= maxAdjCol)
+            && !((cell.row == centralCell.row) && (cell.col == centralCell.col));
+        });
+    }
+
+    /*
+     * Returns the number of alive neighbors of the given cell, at the beginning 
+     * of the current generation. 
+     */
+    function getAliveNeighborsCount(neighbors) {
+        return neighbors.reduce((aliveCount, current) => {
+            if (current.alive)
+                aliveCount++;
+            return aliveCount;
+        }, 0);
+    }
+ 
+    /*
+     * Returns a boolean indicating whether the current cell survives to the next
+     * generation or if a currently dead cell becomes alive in the next generation.
+     * 
+     * The decision is based on the rules of Conway's Game of Life and state of the
+     * grid at the start of the current generation.
+     */ 
+    function IsCellAliveInNextGen(cell) {
+        let aliveNeighborsCount = getAliveNeighborsCount(getNeighbors(cell));
+        let survives = (aliveNeighborsCount >= minNeighborsAlive) && (aliveNeighborsCount <= maxNeighborsAlive);
+        let reborn = aliveNeighborsCount == maxNeighborsAlive;
+ 
+        if (cell.alive)
+            return survives;
+        else
+            return reborn;
+    }
+
+    /*
+     * Returns an Array of Cells which represents the state of the grid in the
+     * next generation based on the current generation. 
+     * This is an immutable function which means that `cell` argument is not modified
+     * in the execution of this function.
+     */ 
+    function generateNextGen(cells) {
+        let nextCells = [];
+    
+        for (let cell of cells) {
+            let nextCell = Object.create(null);
+            nextCell.element = cell.element;
+            nextCell.row = cell.row;
+            nextCell.col = cell.col;
+            nextCell.alive = IsCellAliveInNextGen(cell);
+            nextCells.push(nextCell);
+        }
+    
+        return nextCells;
+    }
+
+    /*
+     * An event handler which is responsible to handle "click" event in
+     * the button with id, "next". This function updates the grid to display
+     * the state of the simulation in the next turn (or "generation").
+     */
+    function updateGrid() {
+        let nextCells = generateNextGen(cells);
+     
+        nextCells.forEach(cell => {
+            cell.element.checked = cell.alive;
+        });
+        cells = nextCells;
+    }
+
+    // Add event handler for "Click" event to the "Next generation" button.
+    next.addEventListener("click", updateGrid);
+
+    // Auto Run of Conway's Game of Life
+    // ---------------------------------
+
+    // Interval Object;
+    let simulate;
+  
+    /*
+     * An event handler which is responsible to handle "click" event in
+     * the button with id, "autorun". This function updates the grid to
+     * display the next generation of the simulation at constant interval
+     * of 500 milliseconds.
+     *
+     * This will also disable the "Autorun Simulation" & "Next Generation"
+     * buttons and display the hidden "Stop Simulation" button (used to pause
+     * the autorun of the game).
+     */
+    function autorunSimulation() {
+        simulate = setInterval(() => {
+            updateGrid();
+        }, 500);
+        autorun.disabled = true;
+        next.disabled = true;
+        stop.style.display = "inline-block";
+    }
+  
+    /*
+     * An event handler which is responsible to handle "click" event in
+     * the button with id, "stop". This function stops the autorun of the
+     * simulation.
+     * 
+     * It will also enable the buttons disabled during the autorun ("Next generation"
+     * & "Autorun Simulation") and hide the "Stop Simulation".
+     */
+    function stopSimulation() {
+        clearInterval(simulate);
+        autorun.disabled = false;
+        next.disabled = false;
+        stop.style.display = "none";
+    }
+  
+    // Add event handler for "Click" event to the "Autorun Simulation" button.
+    autorun.addEventListener("click", autorunSimulation);
+  
+    // Add event handler for "Click" event to the "Stop Simulation" button.
+    stop.addEventListener("click", stopSimulation);
+</script>
