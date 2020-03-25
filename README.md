@@ -199,3 +199,23 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         3. [A Bouncing Ball](https://eloquentjavascript.net/17_canvas.html#i_IoBBN8CiQ5 "Jump to Problem Statement of 'A Bouncing Ball' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2017%20-%20Drawing%20on%20Canvas/a_bouncing_ball.html)) (**Recommended**)
 
         4. [Precomputed Mirroring](https://eloquentjavascript.net/17_canvas.html#i_3ePcd0S4v0 "Jump to Problem Statement of 'Precomputed Mirroring' on Official Site") (Solution **NOT PROVIDED**)
+
+18. [HTTP and Forms](https://eloquentjavascript.net/18_http.html "Jump to Chapter 18 on the Official Site")
+
+    + This chapter, I believe, will be most useful to intermediate level learners who knows the basics of the language or client-side web development.
+
+        A lot of semi-advanced topics are covered in this chapter, including the concept of AJAX calls using the `fetch` API or client-side storage facilities (in the form of `localStorage` or `sessionStorage`.
+
+    + I definitely feel that the third programming exercise of this chapter, "[Conway's Game of Life](https://eloquentjavascript.net/18_http.html#i_XyKQVmCbTN "Jump to Problem Statement of 'Conway's Game of Life' on Official Site")", is the **best non-project based programming exercise** of the book. Answering this question requires the knowledge of almost all of the lessons taught in the book. 
+
+        Also, the subject matter of the question is also exciting, because it is a simulation of "artificial life" on a grid of cells.
+
+        Also, what makes this question even more appealing is the fact that you can approach it in a myriad of ways and make it as easy or difficult as you desire. You can also use this question as a foundation to a more feature-rich version of the simulation.
+
+    + **Programming Exercises**
+
+        1. [Content Negotiation](https://eloquentjavascript.net/18_http.html#i_uaWwL8WGXf "Jump to Problem Statement of 'Content Negotiation' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2018%20-%20HTTP%20and%20Forms/content_negotiation.js)) (**Recommended**)
+
+        2. [A JavaScript Workbench](https://eloquentjavascript.net/18_http.html#i_wTXvIH5Wds "Jump to Problem Statement of 'A JavaScript Workbench' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2018%20-%20HTTP%20and%20Forms/a_javascript_workbench.html)) (**Recommended**)
+
+        3. [Conway's Game of Life](https://eloquentjavascript.net/18_http.html#i_XyKQVmCbTN "Jump to Problem Statement of 'Conway's Game of Life' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2018%20-%20HTTP%20and%20Forms/conway's_game_of_life.html)) (**Recommended**)
