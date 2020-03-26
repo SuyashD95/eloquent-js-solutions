@@ -219,3 +219,26 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         2. [A JavaScript Workbench](https://eloquentjavascript.net/18_http.html#i_wTXvIH5Wds "Jump to Problem Statement of 'A JavaScript Workbench' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2018%20-%20HTTP%20and%20Forms/a_javascript_workbench.html)) (**Recommended**)
 
         3. [Conway's Game of Life](https://eloquentjavascript.net/18_http.html#i_XyKQVmCbTN "Jump to Problem Statement of 'Conway's Game of Life' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2018%20-%20HTTP%20and%20Forms/conway's_game_of_life.html)) (**Recommended**)
+
+19. [Project: A Pixel Art Editor](https://eloquentjavascript.net/19_paint.html "Jump to Chapter 19 on the Official Site") (**SKIPPED**)
+
+    + I have decided to **skip** this chapter even though, this is definitely the most complex project in the book because I simply don't have the time to study it.
+
+        This is a wonderful project for anyone who is interested in doing graphics-heavy work on the web but unfortunately, I had different goals in mind, when I began with this ebook.
+
+        My primary purpose was to learn the fundamentals of the JavaScript language and make myself familiar with the subject of DOM manipulation and performing HTTP(S) request(s) via AJAX calls. This was the main reason why I enjoyed Chapter 18 so much because it dealt with topics that I wished to learn in the first place.
+
+    + Initially, I wanted to do a line-by-line analysis of the project but then I realized, my lack of interest would consequentially lead me to look at the solved solution set. This was something that I really didn't wish to do as I already felt guilty about, since I basically uploaded the solved solution set of Chapter 17.
+
+        Hence, I have decided to not upload any kind of solutions since these are not mine. If the situation ever changes, I will update the repository.
+
+    + **Programming Exercises**
+
+        1. [Keyboard Bindings](https://eloquentjavascript.net/19_paint.html#i_BUum8+bZXE "Jump to Problem Statement of 'Keyboard Bindings' on Official Site") (Solution **NOT PROVIDED**)
+
+        2. [Efficient Drawing](https://eloquentjavascript.net/19_paint.html#i_N6J15nL9us "Jump to Problem Statement of 'Efficient Drawing' on Official Site") (Solution **NOT PROVIDED**)
+
+        3. [Circles](https://eloquentjavascript.net/19_paint.html#i_lH0RbmdIJo "Jump to Problem Statement of 'Circles' on Official Site") (Solution **NOT PROVIDED**)
+
+        4. [Proper Lines](https://eloquentjavascript.net/19_paint.html#i_gbSk/YiRrs "Jump to Problem Statement of 'Proper Lines' on Official Site") (Solution **NOT PROVIDED**)
+
