@@ -228,7 +228,7 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
         My primary purpose was to learn the fundamentals of the JavaScript language and make myself familiar with the subject of DOM manipulation and performing HTTP(S) request(s) via AJAX calls. This was the main reason why I enjoyed Chapter 18 so much because it dealt with topics that I wished to learn in the first place.
 
-    + Initially, I wanted to do a line-by-line analysis of the project but then I realized, my lack of interest would consequentially lead me to look at the solved solution set. This was something that I really didn't wish to do as I already felt guilty about, since I basically uploaded the solved solution set of Chapter 17.
+    + Initially, I wanted to do a line-by-line analysis of the project but then I realized, my lack of interest would consequentially lead me to look at the solved solution set. This was something that I really didn't wish to do as I already felt guilty about basically uploading the solved solution set of Chapter 17.
 
         Hence, I have decided to not upload any kind of solutions since these are not mine. If the situation ever changes, I will update the repository.
 
