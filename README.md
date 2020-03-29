@@ -156,7 +156,7 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
 15. [Handling Events](https://eloquentjavascript.net/15_event.html "Jump to Chapter 15 on the Official Site")
 
-    1. [Balloon](https://eloquentjavascript.net/15_event.html#i_ZPJB9UFdQA "Jump to Problem Statement of 'Balloon' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/balloon.html) (**Recommended**)
+    1. [Balloon](https://eloquentjavascript.net/15_event.html#i_ZPJB9UFdQA "Jump to Problem Statement of 'Balloon' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/balloon.html))  (**Recommended**)
 
     2. [Mouse Trail](https://eloquentjavascript.net/15_event.html#i_NOgRH0Y9st "Jump to Problem Statement of 'Mouse Trail' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2015%20-%20Handling%20Events/mouse_trail.html)) (**Recommended**)
 
@@ -242,3 +242,17 @@ My solutions to the Programming Assignment Questions given at the end of chapter
 
         4. [Proper Lines](https://eloquentjavascript.net/19_paint.html#i_gbSk/YiRrs "Jump to Problem Statement of 'Proper Lines' on Official Site") (Solution **NOT PROVIDED**)
 
+### Part 3: Node
+----
+
+20. [Node.js](https://eloquentjavascript.net/20_node.html "Jump to Chapter 20 on the Official Site")
+
+    + I have decided to skip the third and final programming exercise of this chapter, "[A Public Space On The Web](https://eloquentjavascript.net/20_node.html#i_TLRTlwK6ZU "Jump to Problem Statement of 'A Public Space On The Web' on Official Site")" due to its complexity. This exercise is more like a mini-project that utilizes the concepts taught in the previous chapter, especially those from Chapter 18.
+
+    + **Programming Exercises**
+
+        1. [Search Tool](https://eloquentjavascript.net/20_node.html#i_9+y+iovU0J "Jump to Problem Statement of 'Search Tool' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2020%20-%20Node.js/search_tool.js)) (**Recommended**)
+
+        2. [Directory Creation](https://eloquentjavascript.net/20_node.html#i_h8iNiA8ezX "Jump to Problem Statement of 'Directory Creation' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2020%20-%20Node.js/directory_creation.js)) (**Recommended**)
+
+        3. [A Public Space On The Web](https://eloquentjavascript.net/20_node.html#i_TLRTlwK6ZU "Jump to Problem Statement of 'A Public Space On The Web' on Official Site") (Solution **NOT PROVIDED**)
