@@ -1,6 +1,6 @@
 # eloquent-javascript-solutions
 
-My solutions to the Programming Assignment Questions given at the end of chapters of the book, "Eloquent JavaScript 3rd Edition" by Marijn Haverbeke (https://eloquentjavascript.net/).
+### My solutions to the Programming Assignment Questions given at the end of chapters of the book, "Eloquent JavaScript 3rd Edition" by Marijn Haverbeke (https://eloquentjavascript.net/).
 
 ## Table of Contents
 
@@ -256,3 +256,36 @@ My solutions to the Programming Assignment Questions given at the end of chapter
         2. [Directory Creation](https://eloquentjavascript.net/20_node.html#i_h8iNiA8ezX "Jump to Problem Statement of 'Directory Creation' on Official Site") ([Jump to Solution](https://github.com/SuyashD95/eloquent-js-solutions/blob/master/Chapter%2020%20-%20Node.js/directory_creation.js)) (**Recommended**)
 
         3. [A Public Space On The Web](https://eloquentjavascript.net/20_node.html#i_TLRTlwK6ZU "Jump to Problem Statement of 'A Public Space On The Web' on Official Site") (Solution **NOT PROVIDED**)
+
+21. [Project: Skill Sharing Website](https://eloquentjavascript.net/21_skillsharing.html "Jump to Chapter 21 on the Official Site") (**SKIPPED**)
+
+    + I have decided to skip the final chapter of the e-book version of Eloquent JavaScript (3<sup>rd</sup> edition) simply because **I am in a rush to complete this book and this reminds me of my current job, as a backend (Django) developer**.
+
+        I know that the reason sounds petty (and in some ways, it definitely is) but I have already given this book more time than I had initially desired. It took me nearly 2 months to complete this book which far exceeds my initial estimation of 4-5 weeks, partially due to my professional life coming in the way and my own laziness.
+
+        I never wanted to end the book in this fashion but at this point, I want to utilize my newfound knowledge in some of my ongoing projects as well as move to other things that I have kept delaying to complete this book.
+
+    + **Programming Exercises**
+
+        1. [Disk Persistence](https://eloquentjavascript.net/21_skillsharing.html#i_QcUCZfnLE+ "Jump to Problem Statement of 'Disk Persistence' on Official Site") (Solution **NOT PROVIDED**)
+
+        2. [Comment Field Resets](https://eloquentjavascript.net/21_skillsharing.html#i_QcUCZfnLE+ "Jump to Problem Statement of 'Comment Field Resets' on Official Site") (Solution **NOT PROVIDED**) 
+
+### Final Thoughts
+----
+
+I had a wonderful time reading and completing this book, even though, I have to admit that I didn't expect that it would have taken me nearly 2 months to finish it... But, I am so glad that I did it.
+
+I loved the first section of the book... I think that the concepts were beautifully explained and very well complemented by the end-of-chapter exercises... The only chapter where I felt things could have been more clearly was the 11<sup>th</sup> chapter which focused on the subject of "Asynchronous Programming" in JavaSceipt.
+
+But, it is a subject that I believe, is indeed quite a difficult one to teach and I commend the efforts made by the author (Marijn Haverbeke), to try and use a different approach to make us understand the subject...
+
+The second section was, I believe, quite lengthy but it was definitely worth it... All the chapters were fabulously written and projects were challenging, exciting and fun. I wish that I could have completed the "Pixel Art Editor" project because it was implemented in a simple but effective manner.
+
+This section also contained my most favourite exercise of the book in the form of "Conway's Game of Life" simulation in the 18<sup>th</sup> chapter of the book. I absolutely loved the exercise and I couldn't recommend it enough...
+
+And finally, I had a mixed bag experience with the third & final section of the book which focused on the subject of Node.js, a runtime environment (based on Chrome's V8 engine) which allows us to execute JS code in the backend (on our machines systems, independent of browsers).
+
+I liked the way that Chapter 20 introduced us to some of the key stuff of the Node environment and Chapter 21's project looks like a really good one... It's unfortunate that I skipped the section's project in the form of implementing a skill-sharing website due to my ardent desire to end this add this book into my list of completed reads.
+
+To summarize, I don't think that I could have selected a better book to introduce me to the fundamentals of the modern JavaScript and I am sure that it will continue to remain as a near-constant reference guide (as well as my notes while reading this book) for the forseeable future.
